@@ -33,6 +33,23 @@ body {
     opacity: 0.9;
 }
 
+/* IMAGE */
+.promo-image {
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.promo-image img {
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 0 40px rgba(0,198,255,0.4);
+    transition: 0.4s;
+}
+
+.promo-image img:hover {
+    transform: scale(1.03);
+}
+
 /* PROMO BOX */
 .promo-box {
     max-width: 900px;
@@ -52,7 +69,6 @@ body {
 .promo-box p {
     font-size: 18px;
     line-height: 1.7;
-    opacity: 0.95;
 }
 
 /* FEATURES */
@@ -131,30 +147,26 @@ body {
     <h1>FISH IT</h1>
     <p class="subtitle">Game Memancing Seru & Penuh Tantangan</p>
 
+    <!-- GAMBAR PROMOSI -->
+    <div class="promo-image">
+        <img src="fishit-banner.png" alt="Fish It Game Promo">
+    </div>
+
     <div class="promo-box">
         <h2>🎮 Tentang Game</h2>
         <p>
-            <b>Fish It</b> adalah game memancing modern yang menggabungkan
-            keseruan, strategi, dan koleksi ikan langka. 
-            Rasakan sensasi menjadi pemancing terbaik dan kuasai lautan!
+            <b>Fish It</b> adalah game memancing penuh aksi di mana kamu
+            harus bertahan dari ikan ganas, meng-upgrade alat pancing,
+            dan menjadi legenda laut!
         </p>
 
         <h2>✨ Fitur Unggulan</h2>
         <div class="features">
-            <div class="feature">🎣 Kontrol mudah & santai</div>
-            <div class="feature">🐠 Beragam ikan unik & langka</div>
-            <div class="feature">⚡ Skill, upgrade, dan power-up</div>
-            <div class="feature">🏆 Ranking & pencapaian</div>
-            <div class="feature">🌊 Desain laut yang imersif</div>
-            <div class="feature">🎁 Event & reward harian</div>
+            <div class="feature">🎣 Aksi memancing menegangkan</div>
+            <div class="feature">🦈 Ikan monster & boss laut</div>
+            <div class="feature">⚡ Upgrade alat & skill</div>
+            <div class="feature">🏆 Tantangan & pencapaian</div>
         </div>
-
-        <h2>🔥 Kenapa Harus Main?</h2>
-        <p>
-            Cocok untuk semua umur, bisa dimainkan kapan saja,
-            dan memberikan pengalaman santai sekaligus menantang.
-            Jadilah legenda laut dan buktikan kemampuanmu!
-        </p>
 
         <a href="#" class="btn">▶ MAIN SEKARANG</a>
     </div>
