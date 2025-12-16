@@ -1,44 +1,119 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>Fish It - Catch the Legend</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Fish It - Game Promo</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at bottom, #001f3f, #000814);
+    color: white;
+    overflow: hidden;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 80px;
+    letter-spacing: 5px;
+    text-shadow: 0 0 30px #00c6ff;
+    animation: glow 2s infinite alternate;
+}
+
+.hero p {
+    font-size: 22px;
+    opacity: 0.9;
+    margin: 15px 0 35px;
+}
+
+/* BUTTON */
+.btn {
+    padding: 18px 45px;
+    background: linear-gradient(45deg, #ff9800, #ff5722);
+    border-radius: 50px;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 0 20px #ff9800;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 40px #ff5722;
+}
+
+/* FISH */
+.fish {
+    position: absolute;
+    font-size: 45px;
+    animation: swim linear infinite;
+}
+
+.fish1 { top: 25%; animation-duration: 18s; }
+.fish2 { top: 50%; animation-duration: 14s; }
+.fish3 { top: 75%; animation-duration: 22s; }
+
+@keyframes swim {
+    from { left: -10%; }
+    to { left: 110%; }
+}
+
+/* BUBBLE */
+.bubble {
+    position: absolute;
+    bottom: -50px;
+    width: 15px;
+    height: 15px;
+    background: rgba(255,255,255,0.4);
+    border-radius: 50%;
+    animation: bubble 8s infinite;
+}
+
+.bubble:nth-child(2) { left: 40%; animation-duration: 10s; }
+.bubble:nth-child(3) { left: 70%; animation-duration: 12s; }
+
+@keyframes bubble {
+    from { transform: translateY(0); opacity: 1; }
+    to { transform: translateY(-120vh); opacity: 0; }
+}
+
+/* GLOW */
+@keyframes glow {
+    from { text-shadow: 0 0 20px #00c6ff; }
+    to { text-shadow: 0 0 40px #00e5ff; }
+}
+</style>
 </head>
+
 <body>
 
-    <!-- Background Ocean -->
-    <div class="ocean">
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-    </div>
+<!-- BUBBLES -->
+<div class="bubble"></div>
+<div class="bubble"></div>
+<div class="bubble"></div>
 
-    <!-- Fish Animation -->
-    <div class="fish fish1">🐟</div>
-    <div class="fish fish2">🐠</div>
-    <div class="fish fish3">🐡</div>
+<!-- FISH -->
+<div class="fish fish1">🐟</div>
+<div class="fish fish2">🐠</div>
+<div class="fish fish3">🐡</div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>FISH IT</h1>
-        <p>Catch • Upgrade • Dominate the Sea</p>
-        <a href="#" class="btn-play">▶ PLAY NOW</a>
-    </section>
-
-    <!-- Features -->
-    <section class="features">
-        <div class="box">🎣<br>Real Fishing Feel</div>
-        <div class="box">🐠<br>Epic Fish Collection</div>
-        <div class="box">⚡<br>Power-Ups & Skills</div>
-        <div class="box">🏆<br>Global Leaderboard</div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta">
-        <h2>Are You Ready to Rule the Ocean?</h2>
-        <a href="#" class="btn-download">⬇ DOWNLOAD NOW</a>
-    </section>
+<!-- HERO -->
+<div class="hero">
+    <h1>FISH IT</h1>
+    <p>Catch • Upgrade • Rule The Ocean</p>
+    <a href="#" class="btn">▶ PLAY NOW</a>
+</div>
 
 </body>
 </html>
